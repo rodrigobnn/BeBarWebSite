@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,17 +69,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Action Button */}
-        <div className="hidden md:block">
-          <a
-            href="#waitlist"
-            className="glow-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary hover:bg-primary-hover text-slate-950 text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-200"
-          >
-            Fazer Parte
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
-
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -110,14 +99,6 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-              <a
-                href="#waitlist"
-                onClick={() => setIsOpen(false)}
-                className="inline-flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-primary hover:bg-primary-hover text-slate-950 font-bold shadow-lg shadow-primary/20 transition-all"
-              >
-                Fazer Parte
-                <ArrowRight className="w-4 h-4" />
-              </a>
             </div>
           </motion.div>
         )}

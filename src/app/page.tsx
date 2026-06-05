@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import TechSec from '@/components/TechSec';
-import Waitlist from '@/components/Waitlist';
 
 export default function Home() {
   return (
@@ -23,9 +22,6 @@ export default function Home() {
 
         {/* Technology & Security Section */}
         <TechSec />
-
-        {/* Waitlist Call To Action Section */}
-        <Waitlist />
       </main>
 
       {/* Footer */}
@@ -39,7 +35,6 @@ export default function Home() {
             <a href="#proposito" className="hover:text-primary transition-colors">Propósito</a>
             <a href="#features" className="hover:text-primary transition-colors">Funcionalidades</a>
             <a href="#tech" className="hover:text-primary transition-colors">Segurança</a>
-            <a href="#waitlist" className="hover:text-primary transition-colors">Lista de Espera</a>
           </div>
         </div>
       </footer>
